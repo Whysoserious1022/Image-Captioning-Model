@@ -37,9 +37,10 @@ Early stopping and learning rate scheduler
 After training, the script can generate captions for random validation images.
 Example output:
 
-Predicted Caption: a dog running through the grass
-📂 Project Structure
+![Uploading image.png…]()
 
+
+📂 Project Structure
 
 ├── image_captioning.py   # Main script (training + inference)
 ├── data/                 # Flickr8k dataset (after download)
