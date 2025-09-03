@@ -1,2 +1,71 @@
 # Image-Captioning-Model
 A deep learning project that generates captions for images using a CNN encoder for feature extraction and a Transformer encoder-decoder for sequence generation.
+
+
+# 🖼️ Image Captioning with CNN + Transformer  
+
+This project implements an **Image Captioning model** using **deep learning**. It combines:  
+- A **CNN encoder** (EfficientNet) to extract image features  
+- A **Transformer encoder-decoder** to generate captions in natural language  
+
+---
+
+## 📊 Dataset  
+The model uses the **Flickr8k dataset**, which contains 8,000 images with five captions each.  
+Download inside the repo with:  
+```bash
+wget -q https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_Dataset.zip
+wget -q https://github.com/jbrownlee/Datasets/releases/download/Flickr8k/Flickr8k_text.zip
+unzip -qq Flickr8k_Dataset.zip
+unzip -qq Flickr8k_text.zip
+⚙️ Installation
+bash
+Copy code
+# Clone the repository
+git clone https://github.com/your-username/image-captioning.git
+cd image-captioning
+
+# Install dependencies
+pip install -r requirements.txt
+🚀 Training
+Run the training script:
+
+bash
+Copy code
+python image_captioning.py
+Training uses:
+
+EfficientNetB0 as CNN encoder (pretrained on ImageNet)
+
+Transformer with positional embeddings
+
+Early stopping and learning rate scheduler
+
+🎯 Inference
+After training, the script can generate captions for random validation images.
+Example output:
+
+less
+Copy code
+Predicted Caption: a dog running through the grass
+📂 Project Structure
+bash
+Copy code
+├── image_captioning.py   # Main script (training + inference)
+├── data/                 # Flickr8k dataset (after download)
+├── requirements.txt      # Python dependencies
+└── README.md             # Documentation
+📌 Features
+CNN for visual feature extraction
+
+Transformer encoder-decoder for caption generation
+
+Data augmentation and preprocessing pipeline
+
+BLEU score evaluation
+
+Easily extendable to other datasets
+
+📜 License
+
+MIT License
