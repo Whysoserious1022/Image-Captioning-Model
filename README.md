@@ -37,7 +37,7 @@ Early stopping and learning rate scheduler
 After training, the script can generate captions for random validation images.
 Example output:
 
-![Uploading image.png…]()
+<img width="968" height="801" alt="image" src="https://github.com/user-attachments/assets/28eb44b5-468c-483e-9ba7-910618ee6ad5" />
 
 
 📂 Project Structure
